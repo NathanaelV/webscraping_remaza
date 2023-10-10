@@ -9,7 +9,7 @@ url = 'https://idfed.mpsa.com/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcrmfca
 
 
 option = Options()
-option.headless = False # Mudar para True para não ver o navegador em ação
+option.headless = True # Mudar para True para não ver o navegador em ação
 browser = webdriver.Firefox(options=option)
 
 browser.get(url)
@@ -37,9 +37,11 @@ dados = json.loads(conteudo)['all_href']
 #     # Fazer o parse do JSON para um dicionário
 #     dados = json.load(arquivo_json)
 
-for dado in dados:
-  url_leads = dado['href']
-  browser.get(url_leads)
+leads_dict = {'leads': []}
+
+for dado in dados[0:10]:
+  url_lead = dado['href']
+  browser.get(url_lead)
   time.sleep(10)
 
   name_xpath = '/html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div[1]/div/div/div/section/div/div/div/div/article/div[2]/div/div[2]/div/div/div[2]/div[1]/div/div[2]/span/span'
@@ -58,8 +60,34 @@ for dado in dados:
   product_name = browser.find_element_by_xpath(product_xpath).text
   print(product_name)
 
+  lead = {
+    "lead": {
+      "customer": {
+        "name": customer_name,
+        "phone": customer_phone,
+        "email": customer_email
+      },
+      "product": {
+        "name": product_name 
+      },
+      "dealership": {
+        "id": "",
+        "account": "" 
+      },
+      "origin_url": url_lead
+    },
+    "crawler_id": "64077272771cf900d926aa45"
+  }
+  leads_dict['leads'].append(lead)
+  print('-------------------')
+  print(lead)
   print('-------------------')
 
-# breakpoint()
-
 browser.quit()
+
+open_file = open('leads_payload.json', 'w')
+open_file.write(json.dumps(leads_dict))
+open_file.close()
+
+
+

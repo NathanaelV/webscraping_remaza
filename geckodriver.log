@@ -10542,3 +10542,99 @@ console.error: ({})
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
 1696942278351	Marionette	INFO	Stopped listening on port 34999
+1696943320425	geckodriver	INFO	Listening on 127.0.0.1:48609
+1696943321293	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileNV6yL0"
+Gtk-Message: 10:08:41.315: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+
+(firefox:32423): Gtk-WARNING **: 10:08:41.390: GTK+ module /snap/firefox/3206/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 10:08:41.390: Failed to load module "canberra-gtk-module"
+
+(firefox:32423): Gtk-WARNING **: 10:08:41.391: GTK+ module /snap/firefox/3206/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 10:08:41.391: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696943321847	Marionette	INFO	Marionette enabled
+1696943321928	Marionette	INFO	Listening on port 33847
+Read port: 33847
+1696943322145	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+1696943346748	Marionette	INFO	Stopped listening on port 33847
+1696943670990	geckodriver	INFO	Listening on 127.0.0.1:39703
+1696943671892	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilem21po3"
+Gtk-Message: 10:14:31.913: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+
+(firefox:34050): Gtk-WARNING **: 10:14:31.985: GTK+ module /snap/firefox/3206/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 10:14:31.985: Failed to load module "canberra-gtk-module"
+
+(firefox:34050): Gtk-WARNING **: 10:14:31.986: GTK+ module /snap/firefox/3206/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 10:14:31.986: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696943672421	Marionette	INFO	Marionette enabled
+1696943672497	Marionette	INFO	Listening on port 44223
+Read port: 44223
+1696943672688	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+1696943700739	Marionette	INFO	Stopped listening on port 44223
+1696943785946	geckodriver	INFO	Listening on 127.0.0.1:37513
+1696943786800	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile3Wnw3g"
+Gtk-Message: 10:16:26.827: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+
+(firefox:35107): Gtk-WARNING **: 10:16:26.888: GTK+ module /snap/firefox/3206/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 10:16:26.888: Failed to load module "canberra-gtk-module"
+
+(firefox:35107): Gtk-WARNING **: 10:16:26.889: GTK+ module /snap/firefox/3206/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 10:16:26.889: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696943787326	Marionette	INFO	Marionette enabled
+1696943787387	Marionette	INFO	Listening on port 40093
+Read port: 40093
+1696943787509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1696943834788	Marionette	INFO	Stopped listening on port 40093
+1696944028328	geckodriver	INFO	Listening on 127.0.0.1:41859
+1696944029186	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofile38Khrk"
+*** You are running in headless mode.
+Gtk-Message: 10:20:29.208: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696944029390	Marionette	INFO	Marionette enabled
+1696944029440	Marionette	INFO	Listening on port 37567
+Read port: 37567
+1696944029613	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1696944636311	Marionette	INFO	Stopped listening on port 37567
+1696947085963	geckodriver	INFO	Listening on 127.0.0.1:36609
+1696947086877	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "-headless" "-no-remote" "-profile" "/tmp/rust_mozprofileHHcuIi"
+*** You are running in headless mode.
+Gtk-Message: 11:11:26.921: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696947087194	Marionette	INFO	Marionette enabled
+1696947087250	Marionette	INFO	Listening on port 38761
+Read port: 38761
+1696947087428	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://idfed.mpsa.com."
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1696947220898	Marionette	INFO	Stopped listening on port 38761
