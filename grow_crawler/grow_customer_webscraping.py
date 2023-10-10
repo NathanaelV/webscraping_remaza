@@ -39,26 +39,22 @@ dados = json.loads(conteudo)['all_href']
 
 leads_dict = {'leads': []}
 
-for dado in dados[0:10]:
+for count, dado in enumerate(dados, start=1):
   url_lead = dado['href']
   browser.get(url_lead)
   time.sleep(10)
 
   name_xpath = '/html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div[1]/div/div/div/section/div/div/div/div/article/div[2]/div/div[2]/div/div/div[2]/div[1]/div/div[2]/span/span'
   customer_name = browser.find_element_by_xpath(name_xpath).text
-  print(customer_name)
 
   phone_xpath = '/html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div[1]/div/div/div/section/div/div/div/div/article/div[2]/div/div[2]/div/div/div[2]/div[2]/div/div[2]/span/span'
   customer_phone = browser.find_element_by_xpath(phone_xpath).text
-  print(customer_phone)
 
   email_xpath = '/html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div[1]/div/div/div/section/div/div/div/div/article/div[2]/div/div[2]/div/div/div[3]/div[1]/div/div[2]/span'
   customer_email = browser.find_element_by_xpath(email_xpath).text
-  print(customer_email)
 
   product_xpath = '/html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div[2]/div/div[3]/div/div/div/div[1]/article/div[2]/div/div/div/div/div[3]/div/div/table/tbody/tr/td[1]'
   product_name = browser.find_element_by_xpath(product_xpath).text
-  print(product_name)
 
   lead = {
     "lead": {
@@ -79,8 +75,7 @@ for dado in dados[0:10]:
     "crawler_id": "64077272771cf900d926aa45"
   }
   leads_dict['leads'].append(lead)
-  print('-------------------')
-  print(lead)
+  print(f'Lead {count} of {len(dados)}')
   print('-------------------')
 
 browser.quit()

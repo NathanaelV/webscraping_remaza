@@ -27,6 +27,7 @@ time.sleep(3)
 
 
 # Search for link of leads
+browser.maximize_window()
 
 url_leads = 'https://crmfcalatam.my.site.com/grow/s/lead/Lead/00BA0000006AgocMAC?Lead-filterId=00BA0000006AgocMAC'
 browser.get(url_leads)
