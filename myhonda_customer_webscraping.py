@@ -3,10 +3,11 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
+import json
 
-urls = [
-  # Começar no dia 24/12
-  ]
+arquivo = open('leads_links.json', 'r')
+conteudo = arquivo.read()
+urls = json.loads(conteudo)['all_href']
 
 option = Options()
 option.headless = True # Mudar para True para não ver o navegador em ação
@@ -23,13 +24,14 @@ input=browser.find_element_by_id("username")
 input.send_keys("wander_silva@motoremaza.com.br")
 
 input=browser.find_element_by_id("password")
-input.send_keys("Motoremaza10*")
+input.send_keys("Motoremaza11*")
 input.send_keys(Keys.ENTER)
-time.sleep(5)
+time.sleep(2)
 
 for count, url in enumerate(urls, start=1):
   browser.get(url)
   time.sleep(10)
+  print(url)
 
   name_xpath = '/html/body/div[3]/div[3]/div/div[2]/div[2]/div/div/div/section/div/div/div/div/article/div[2]/div/div[1]/div/div/div[1]/div[1]/div/div[2]/span/span'
   customer_name = browser.find_element_by_xpath(name_xpath).text
@@ -95,6 +97,5 @@ for count, url in enumerate(urls, start=1):
   print(response.text)
   print(f'Lead {count} of {len(urls)}')
   print('-------------------')
-
 
 browser.quit()

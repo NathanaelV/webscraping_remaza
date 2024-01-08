@@ -49,13 +49,13 @@ href_dictionary = {'all_href': []}
 for element in all_customers_links:
     href_dictionary['all_href'].append({'href': element.get_attribute('href')})
 
-browser.quit()
+# browser.quit()
 
-# breakpoint()
+# # breakpoint()
 
-open_file = open('leads_links.json', 'w')
-open_file.write(json.dumps(href_dictionary))
-open_file.close()
+# open_file = open('leads_links.json', 'w')
+# open_file.write(json.dumps(href_dictionary))
+# open_file.close()
 
 
 
