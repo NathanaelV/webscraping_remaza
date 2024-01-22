@@ -13,7 +13,7 @@ url = 'https://myhonda.my.site.com/leads/s/lead/Lead/Default?Lead-filterId=00B61
 
 
 option = Options()
-option.headless = False # Mudar para True para não ver o navegador em ação
+option.headless = True # Mudar para True para não ver o navegador em ação
 browser = webdriver.Firefox(options=option)
 
 browser.get(url)
@@ -33,12 +33,12 @@ time.sleep(10)
 href_dictionary = {'all_href': []}
 
 # Time to scroll down manually
-time.sleep(60)
+# time.sleep(60)
 print('Times over')
-time.sleep(10)
+# time.sleep(10)
 
 
-for i in range(1, 650):
+for i in range(1, 49):
   a_path = f"/html/body/div[3]/div[3]/div/div[2]/div/div/div/div[2]/div/div[1]/div[2]/div[2]/div[1]/div/div/table/tbody/tr[{i}]/th/span/a"
   customers_links = browser.find_element_by_xpath(a_path).get_attribute('href')
   href_dictionary['all_href'].append(customers_links)

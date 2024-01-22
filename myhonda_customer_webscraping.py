@@ -99,3 +99,10 @@ for count, url in enumerate(urls, start=1):
   print('-------------------')
 
 browser.quit()
+
+
+# Before Execute test
+
+# all_href = ['']
+# count = 0
+# href_not_exist = all_href.reject { |href| count += 1; puts count if count % 10 == 0; Crawlers::Lead.where(origin_url: href).exists? };''
